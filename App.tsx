@@ -5,6 +5,10 @@ import Bubble1 from './Bubble1';
 
 export default function App() {
 
+  const randNumber = 3
+  
+  const randNumber2 = 5
+
   return (
     <View style={styles.container}>
  
