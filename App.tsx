@@ -1,10 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet,View } from 'react-native';
+
+import Bubble1 from './Bubble1';
 
 export default function App() {
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+ 
+    <Bubble1 loopTime={5200}/>
+    <Bubble1 loopTime={6000}/>
+    <Bubble1 loopTime={5000}/>
+    <Bubble1 loopTime={5500}/>
+    <Bubble1 loopTime={5100}/>
+    <Bubble1 loopTime={6100}/>
+    <Bubble1 loopTime={4800}/>
+    <Bubble1 loopTime={4900}/>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -12,9 +24,12 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    
+    flex:1,
+    flexDirection:'row',
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-end',
+    justifyContent: 'flex-start',
   },
+
 });
